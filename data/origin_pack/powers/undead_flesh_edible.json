@@ -11,9 +11,9 @@
   "food_component": {
     "hunger": 4,
     "saturation": 0.1,
-    "meat": true,
-    "effects_marred": true
+    "meat": true
   },
+  "effects_marred": true,
   "use_action": "eat",
   "priority": 10
 }
