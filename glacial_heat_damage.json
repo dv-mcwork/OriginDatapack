@@ -1,7 +1,7 @@
 {
   "type": "origins:damage_over_time",
   "name": "Scorched",
-  "description": "Hot, arid biomes are agony for one born of frost, dealing a full heart of damage every second.",
+  "description": "Hot, arid biomes are agony for one born of frost, dealing a full heart of damage every second. Standing on ice protects you.",
   "interval": 20,
   "onset_delay": 0,
   "damage": 2,
@@ -10,17 +10,30 @@
     "bypasses_armor": false
   },
   "condition": {
-    "type": "origins:biome",
-    "biomes": [
-      "minecraft:desert",
-      "minecraft:badlands",
-      "minecraft:eroded_badlands",
-      "minecraft:wooded_badlands",
-      "minecraft:nether_wastes",
-      "minecraft:crimson_forest",
-      "minecraft:warped_forest",
-      "minecraft:soul_sand_valley",
-      "minecraft:basalt_deltas"
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:biome",
+        "biomes": [
+          "minecraft:desert",
+          "minecraft:badlands",
+          "minecraft:eroded_badlands",
+          "minecraft:wooded_badlands",
+          "minecraft:nether_wastes",
+          "minecraft:crimson_forest",
+          "minecraft:warped_forest",
+          "minecraft:soul_sand_valley",
+          "minecraft:basalt_deltas"
+        ]
+      },
+      {
+        "type": "origins:on_block",
+        "block_condition": {
+          "type": "origins:in_tag",
+          "tag": "minecraft:ice"
+        },
+        "inverted": true
+      }
     ]
   }
 }
