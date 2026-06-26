@@ -1,10 +1,20 @@
 {
   "type": "origins:action_over_time",
   "name": "Kindred Decay",
-  "description": "The restless dead recognize one of their own. Hostile night mobs are completely peaceful and will not attack you.",
-  "interval": 10,
+  "description": "Undead monsters recognize you as one of their own and will not attack unless provoked.",
+  "interval": 20,
   "entity_action": {
-    "type": "origins:execute_command",
-    "command": "execute as @e[type=#OriginDatapack:undead_mobs,distance=..32] run data remove entity @s Brain.memories.\"minecraft:attack_target\""
+    "type": "origins:area_of_effect",
+    "radius": 32,
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_group",
+        "group": "undead"
+      }
+    },
+    "bientity_action": {
+      "type": "origins:owner"
+    }
   }
 }
