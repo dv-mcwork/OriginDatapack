@@ -1,0 +1,18 @@
+{
+  "type": "origins:edible_item",
+  "name": "Preferred Sustenance",
+  "description": "Rotten flesh is a feast to the undead, never sickening you.",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "food_component": {
+    "hunger": 4,
+    "saturation": 0.1,
+    "meat": true
+  },
+  "use_action": "eat",
+  "priority": 1
+}

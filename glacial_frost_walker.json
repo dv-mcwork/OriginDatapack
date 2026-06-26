@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_enchantment_level",
+  "name": "Winter's Step",
+  "description": "Water freezes beneath your feet as you walk, even without enchanted boots.",
+  "enchantment": "minecraft:frost_walker",
+  "modifier": {
+    "operation": "set_total",
+    "value": 2
+  }
+}

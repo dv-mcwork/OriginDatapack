@@ -1,0 +1,23 @@
+{
+  "type": "origins:multiple",
+  "name": "Herder's Bond",
+  "description": "This mount moves with unnatural vigor under a Herder's care.",
+  "speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Herder mount speed boost",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": 0.25
+    }
+  },
+  "jump": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Herder mount jump boost",
+      "attribute": "minecraft:horse.jump_strength",
+      "operation": "multiply_total",
+      "value": 0.25
+    }
+  }
+}

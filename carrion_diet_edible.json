@@ -1,0 +1,18 @@
+{
+  "type": "origins:edible_item",
+  "name": "Decay Untouched",
+  "description": "What sickens others nourishes you. Rotten flesh never gives you the Hunger effect.",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "food_component": {
+    "hunger": 4,
+    "saturation": 0.1,
+    "meat": true
+  },
+  "use_action": "eat",
+  "priority": 1
+}

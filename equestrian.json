@@ -1,0 +1,25 @@
+{
+  "type": "origins:action_over_time",
+  "name": "Equestrian",
+  "description": "Horses, donkeys, and mules move 25% faster and jump higher when you ride them.",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:riding_action",
+    "action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          { "type": "origins:entity_type", "entity_type": "minecraft:horse" },
+          { "type": "origins:entity_type", "entity_type": "minecraft:donkey" },
+          { "type": "origins:entity_type", "entity_type": "minecraft:mule" }
+        ]
+      },
+      "if_action": {
+        "type": "origins:grant_power",
+        "power": "origin_pack:herder_mount_buff",
+        "source": "origin_pack:equestrian"
+      }
+    }
+  }
+}

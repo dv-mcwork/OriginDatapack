@@ -1,0 +1,39 @@
+{
+  "type": "origins:damage_over_time",
+  "name": "Warmth Sickness",
+  "description": "Warm biomes sap your frost-born strength, dealing half a heart of damage every second.",
+  "interval": 20,
+  "onset_delay": 0,
+  "damage": 1,
+  "damage_source": {
+    "name": "origin_pack.glacial_warmth",
+    "bypasses_armor": false
+  },
+  "condition": {
+    "type": "origins:biome",
+    "biomes": [
+      "minecraft:plains",
+      "minecraft:sunflower_plains",
+      "minecraft:forest",
+      "minecraft:flower_forest",
+      "minecraft:birch_forest",
+      "minecraft:old_growth_birch_forest",
+      "minecraft:dark_forest",
+      "minecraft:swamp",
+      "minecraft:mangrove_swamp",
+      "minecraft:jungle",
+      "minecraft:sparse_jungle",
+      "minecraft:bamboo_jungle",
+      "minecraft:savanna",
+      "minecraft:savanna_plateau",
+      "minecraft:windswept_savanna",
+      "minecraft:beach",
+      "minecraft:stony_shore",
+      "minecraft:river",
+      "minecraft:warm_ocean",
+      "minecraft:lukewarm_ocean",
+      "minecraft:deep_lukewarm_ocean",
+      "minecraft:mushroom_fields"
+    ]
+  }
+}

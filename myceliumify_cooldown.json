@@ -1,0 +1,9 @@
+{
+  "type": "origins:cooldown",
+  "name": "Myceliumify Cooldown",
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 0
+  }
+}

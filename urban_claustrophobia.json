@@ -1,0 +1,22 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Urban Claustrophobia",
+  "description": "Crowded settlements close in on you. Being within 15 blocks of more than 3 villagers gives you Weakness I.",
+  "min_stacks": -3,
+  "max_stacks": 1,
+  "duration_per_stack": 100,
+  "tick_rate": 20,
+  "effect": {
+    "effect": "minecraft:weakness",
+    "amplifier": 0,
+    "is_ambient": true,
+    "show_particles": true,
+    "show_icon": true
+  },
+  "condition": {
+    "type": "origins:command",
+    "command": "execute if entity @e[type = minecraft:villager, distance = ..15]",
+    "comparison": ">=",
+    "compare_to": 4
+  }
+}

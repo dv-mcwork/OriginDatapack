@@ -1,0 +1,13 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Bare-Knuckle",
+  "description": "You fight with your fists alone. You cannot use a shield, bow, or crossbow.",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": [
+      { "item": "minecraft:shield" },
+      { "item": "minecraft:bow" },
+      { "item": "minecraft:crossbow" }
+    ]
+  }
+}

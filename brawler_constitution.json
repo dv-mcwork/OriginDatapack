@@ -1,0 +1,47 @@
+{
+  "type": "origins:multiple",
+  "name": "Brawler's Constitution",
+  "description": "You are permanently Slowness I, Strength II, and Resistance IV. A heavy, unstoppable wall of muscle.",
+  "slowness": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 100,
+    "tick_rate": 20,
+    "effect": {
+      "effect": "minecraft:slowness",
+      "amplifier": 0,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    }
+  },
+  "strength": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 100,
+    "tick_rate": 20,
+    "effect": {
+      "effect": "minecraft:strength",
+      "amplifier": 1,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    }
+  },
+  "resistance": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 100,
+    "tick_rate": 20,
+    "effect": {
+      "effect": "minecraft:resistance",
+      "amplifier": 3,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    }
+  }
+}

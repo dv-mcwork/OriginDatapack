@@ -1,0 +1,17 @@
+{
+  "type": "origins:target_action_on_hit",
+  "name": "Withering Touch",
+  "description": "Your touch carries decay. Attacking something inflicts Wither on it for 4 seconds.",
+  "cooldown": 1,
+  "hud_render": {
+    "should_render": false
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:wither",
+      "amplifier": 0,
+      "duration": 80
+    }
+  }
+}

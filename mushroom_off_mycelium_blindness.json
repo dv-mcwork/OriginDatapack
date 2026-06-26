@@ -1,0 +1,24 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Spore-Bound Sight",
+  "description": "Your eyes are adapted only to the fungal network. Away from mycelium, your vision fails you.",
+  "min_stacks": -3,
+  "max_stacks": 1,
+  "duration_per_stack": 100,
+  "tick_rate": 20,
+  "effect": {
+    "effect": "minecraft:blindness",
+    "amplifier": 0,
+    "is_ambient": true,
+    "show_particles": false,
+    "show_icon": true
+  },
+  "condition": {
+    "type": "origins:on_block",
+    "block_condition": {
+      "type": "origins:block",
+      "block": "minecraft:mycelium"
+    },
+    "inverted": true
+  }
+}

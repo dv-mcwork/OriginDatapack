@@ -1,0 +1,14 @@
+{
+  "type": "origins:modify_damage_taken",
+  "name": "Brittle Bones",
+  "description": "Your frost-hardened body is more brittle than it looks. You take 10% more fall damage.",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "fall"
+  },
+  "modifier": {
+    "name": "Glacial increased fall damage",
+    "operation": "multiply_total",
+    "value": 0.1
+  }
+}

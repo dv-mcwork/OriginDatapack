@@ -1,0 +1,16 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Decaying Strength",
+  "description": "Your undead muscles have withered. You are permanently afflicted with Weakness.",
+  "min_stacks": 1,
+  "max_stacks": 1,
+  "duration_per_stack": 100,
+  "tick_rate": 20,
+  "effect": {
+    "effect": "minecraft:weakness",
+    "amplifier": 0,
+    "is_ambient": true,
+    "show_particles": false,
+    "show_icon": true
+  }
+}

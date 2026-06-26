@@ -1,0 +1,9 @@
+{
+  "type": "origins:resource",
+  "name": "Spore Charge",
+  "min": 0,
+  "max": 300,
+  "hud_render": {
+    "should_render": false
+  }
+}

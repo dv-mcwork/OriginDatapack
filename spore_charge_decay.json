@@ -1,0 +1,39 @@
+{
+  "type": "origins:action_over_time",
+  "name": "Spore Charge Decay",
+  "interval": 1,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origin_pack:spore_charge",
+      "comparison": "==",
+      "compare_to": 2
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "origin_pack:spore_charge",
+          "change": -2
+        },
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "origin_pack:myceliumify_cooldown"
+        }
+      ]
+    },
+    "else_action": {
+      "type": "origins:change_resource",
+      "resource": "origin_pack:spore_charge",
+      "change": -2
+    }
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origin_pack:spore_charge",
+    "comparison": ">",
+    "compare_to": 0
+  }
+}

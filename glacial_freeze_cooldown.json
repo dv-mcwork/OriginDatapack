@@ -1,0 +1,9 @@
+{
+  "type": "origins:cooldown",
+  "name": "Permafrost Cooldown",
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "origins:conditioned_attribute",
+  "name": "Frozen in Place",
+  "description": "You cannot move while channeling the freezing cold into the earth.",
+  "modifier": {
+    "name": "Permafrost channel root",
+    "attribute": "minecraft:generic.movement_speed",
+    "operation": "multiply_total",
+    "value": -0.95
+  },
+  "tick_rate": 1,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origin_pack:glacial_charge",
+    "comparison": ">",
+    "compare_to": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "origins:resource",
+  "name": "Glacial Charge",
+  "min": 0,
+  "max": 600,
+  "hud_render": {
+    "should_render": false
+  }
+}

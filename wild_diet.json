@@ -1,0 +1,19 @@
+{
+  "type": "origins:action_on_item_use",
+  "name": "Wild Diet",
+  "description": "You can only eat raw foods; cooked meats and baked goods give you Nausea.",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:nausea",
+      "amplifier": 0,
+      "duration": 200
+    }
+  },
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "origin_pack:cooked_or_baked"
+    }
+  }
+}
