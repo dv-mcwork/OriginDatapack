@@ -1,9 +1,9 @@
 {
   "type": "origins:modify_player_spawn",
   "name": "Born of Frost",
-  "description": "You came into the world where the frost never melts. You spawn in a cold biome such as Ice Spikes or Snowy Taiga.",
+  "description": "You came into the world where the frost never melts.",
   "dimension": "minecraft:overworld",
-  "biome": "#minecraft:is_cold",
+  "biome": "minecraft:snowy_taiga",
   "spawn_strategy": "center",
   "priority": 100
 }
