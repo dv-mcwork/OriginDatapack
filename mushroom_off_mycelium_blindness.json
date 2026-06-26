@@ -7,7 +7,7 @@
   "duration_per_stack": 100,
   "tick_rate": 20,
   "effect": {
-    "effect": "minecraft:blindness",
+    "effect": "minecraft:darkness",
     "amplifier": 0,
     "is_ambient": true,
     "show_particles": false,
