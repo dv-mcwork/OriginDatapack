@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "origins": [
+    "origin_pack:mushroom",
+    "origin_pack:herder",
+    "origin_pack:glacial",
+    "origin_pack:brawler",
+    "origin_pack:undead"
+  ]
+}
