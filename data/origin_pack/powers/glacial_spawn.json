@@ -3,7 +3,7 @@
   "name": "Born of Frost",
   "description": "You came into the world where the frost never melts.",
   "dimension": "minecraft:overworld",
-  "biome": "minecraft:snowy_taiga",
+  "biome": "#minecraft:is_cold",
   "spawn_strategy": "center",
   "priority": 100
 }
