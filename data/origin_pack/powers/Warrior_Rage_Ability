@@ -1,113 +1,49 @@
 {
-  "type": "origins:multiple",
+  "type": "origins:active_self",
   "name": "Warrior Rage",
   "description": "Upon activation, lose your inherent slowness and gain maximum strength for 10 seconds. Afterward, regain slowness and take 3 hearts of damage.",
-  
-  "rage_timer": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 200,
-    "start_value": 0,
-    "hud_render": {
-      "should_render": true,
-      "bar_index": 5
-    }
+  "cooldown": 600,
+  "key": {
+    "key": "key.origins.primary_active"
   },
-
-  "activate": {
-    "type": "origins:active_self",
-    "cooldown": 600,
-    "key": {
-      "key": "key.origins.primary_active"
-    },
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:*_rage_timer",
-      "comparison": "==",
-      "compare_to": 0
-    },
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:change_resource",
-          "resource": "*:*_rage_timer",
-          "change": 200,
-          "operation": "set"
-        },
-        {
-          "type": "origins:clear_status_effect",
-          "status_effect": "minecraft:slowness"
-        },
-        {
-          "type": "origins:apply_status_effect",
-          "status_effect": "minecraft:strength",
-          "duration": 200,
-          "amplifier": 4,
-          "is_ambient": false,
-          "show_particles": true,
-          "show_icon": true
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:clear_status_effect",
+        "status_effect": "minecraft:slowness"
+      },
+      {
+        "type": "origins:apply_status_effect",
+        "status_effect": "minecraft:strength",
+        "duration": 200,
+        "amplifier": 4,
+        "is_ambient": false,
+        "show_particles": true,
+        "show_icon": true
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 200,
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:apply_status_effect",
+              "status_effect": "minecraft:slowness",
+              "duration": 999999,
+              "amplifier": 0,
+              "is_ambient": true,
+              "show_particles": false,
+              "show_icon": false
+            },
+            {
+              "type": "origins:damage",
+              "amount": 6,
+              "source": "magic"
+            }
+          ]
         }
-      ]
-    }
-  },
-
-  "timer_decay": {
-    "type": "origins:action_over_time",
-    "interval": 1,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:*_rage_timer",
-      "comparison": ">",
-      "compare_to": 0
-    },
-    "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "*:*_rage_timer",
-      "change": -1
-    }
-  },
-
-  "rage_end": {
-    "type": "origins:action_over_time",
-    "interval": 1,
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:resource",
-          "resource": "*:*_rage_timer",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "origins:status_effect",
-          "status_effect": "minecraft:slowness",
-          "inverted": true
-        }
-      ]
-    },
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:apply_status_effect",
-          "status_effect": "minecraft:slowness",
-          "duration": 999999,
-          "amplifier": 0,
-          "is_ambient": true,
-          "show_particles": false,
-          "show_icon": false
-        },
-        {
-          "type": "origins:damage",
-          "amount": 6,
-          "source": "magic"
-        }
-      ]
-    }
-  }
-}
       }
     ]
   }
