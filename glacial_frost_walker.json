@@ -6,5 +6,6 @@
   "modifier": {
     "operation": "set_total",
     "value": 2
-  }
+  },
+  "priority": 50
 }
