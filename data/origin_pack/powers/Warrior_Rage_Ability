@@ -1,1 +1,53 @@
-
+{
+  "type": "origins:active_self",
+  "name": "Warrior Rage",
+  "description": "Upon activation, lose your inherent slowness and gain maximum strength for 10 seconds. Afterward, regain slowness and take 3 hearts of damage.",
+  "cooldown": 600,
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:clear_status_effect",
+        "status_effect": "minecraft:slowness"
+      },
+      {
+        "type": "origins:apply_status_effect",
+        "status_effect": "minecraft:strength",
+        "duration": 200,
+        "amplifier": 4,
+        "is_ambient": false,
+        "show_particles": true,
+        "show_icon": true
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 200,
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:apply_status_effect",
+              "status_effect": "minecraft:slowness",
+              "duration": 999999,
+              "amplifier": 0,
+              "is_ambient": true,
+              "show_particles": false,
+              "show_icon": false
+            },
+            {
+              "type": "origins:damage",
+              "amount": 6,
+              "damage_source": {
+                "name": "magic",
+                "bypasses_armor": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
