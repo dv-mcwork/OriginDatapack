@@ -1,13 +1,21 @@
 {
   "type": "origins:conditioned_attribute",
   "name": "Frozen in Place",
-  "description": "You cannot move while channeling the freezing cold into the earth.",
-  "modifier": {
-    "name": "Permafrost channel root",
-    "attribute": "minecraft:generic.movement_speed",
-    "operation": "multiply_total",
-    "value": -0.95
-  },
+  "description": "You cannot move, jump, or ride entities while channeling the freezing cold into the earth.",
+  "modifiers": [
+    {
+      "name": "Permafrost channel root speed",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "addition",
+      "value": -10.0
+    },
+    {
+      "name": "Permafrost channel root jump",
+      "attribute": "minecraft:generic.jump_strength",
+      "operation": "addition",
+      "value": -10.0
+    }
+  ],
   "tick_rate": 1,
   "condition": {
     "type": "origins:resource",
