@@ -3,7 +3,7 @@
   "name": "Spore-Born",
   "description": "You spawn in mushroom field biomes.",
   "dimension": "minecraft:overworld",
-  "biome": "minecraft:mushroom_fields",
+  "biome": "#minecraft:is_mushroom_fields",
   "spawn_strategy": "center",
   "priority": 100
 }
