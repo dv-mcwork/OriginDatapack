@@ -40,7 +40,7 @@
             {
               "type": "origins:damage",
               "amount": 6,
-              "source": "magic"
+              "source": "out_of_world"
             }
           ]
         }
