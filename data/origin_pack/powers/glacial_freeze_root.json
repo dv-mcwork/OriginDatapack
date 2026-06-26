@@ -1,26 +1,60 @@
 {
-  "type": "origins:conditioned_attribute",
+  "type": "origins:multiple",
   "name": "Frozen in Place",
   "description": "You cannot move, jump, or ride entities while channeling the freezing cold into the earth.",
-  "modifiers": [
-    {
-      "name": "Permafrost channel root speed",
-      "attribute": "minecraft:generic.movement_speed",
-      "operation": "addition",
-      "value": -10.0
-    },
-    {
-      "name": "Permafrost channel root jump",
-      "attribute": "minecraft:generic.jump_strength",
-      "operation": "addition",
-      "value": -10.0
+  
+  "speed_root": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "name": "Permafrost channel root speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "addition",
+        "value": -10.0
+      }
+    ],
+    "tick_rate": 1,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origin_pack:glacial_charge",
+      "comparison": ">",
+      "compare_to": 0
     }
-  ],
-  "tick_rate": 1,
-  "condition": {
-    "type": "origins:resource",
-    "resource": "origin_pack:glacial_charge",
-    "comparison": ">",
-    "compare_to": 0
+  },
+
+  "jump_root": {
+    "type": "origins:modify_jump",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -1.0
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origin_pack:glacial_charge",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+
+  "dismount_root": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "origin_pack:glacial_charge",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:riding"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:dismount"
+    }
   }
 }
