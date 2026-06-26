@@ -1,13 +1,21 @@
 {
   "type": "origins:conditioned_attribute",
   "name": "Rooted in Spores",
-  "description": "You cannot move while channeling your fungal network into the earth.",
-  "modifier": {
-    "name": "Myceliumify channel root",
-    "attribute": "minecraft:generic.movement_speed",
-    "operation": "multiply_total",
-    "value": -0.95
-  },
+  "description": "You cannot move, jump, or ride entities while channeling your fungal network into the earth.",
+  "modifiers": [
+    {
+      "name": "Myceliumify channel root speed",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "addition",
+      "value": -10.0
+    },
+    {
+      "name": "Myceliumify channel root jump",
+      "attribute": "minecraft:generic.jump_strength",
+      "operation": "addition",
+      "value": -10.0
+    }
+  ],
   "tick_rate": 1,
   "condition": {
     "type": "origins:resource",
