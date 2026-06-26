@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "origin_pack:brawler_no_armor",
+    "origin_pack:brawler_no_ranged",
+    "origin_pack:brawler_magic_vulnerability",
+    "origin_pack:brawler_constitution"
+  ],
+  "icon": {
+    "item": "minecraft:iron_horse_armor"
+  },
+  "order": 40,
+  "impact": 3,
+  "name": "Brawler",
+  "description": "A fighter who trusts nothing but their own two fists. The Brawler cannot wear armor, use a shield, or fire ranged weapons, and is weak to magic, but is permanently strengthened, slowed, and made unnaturally resilient by sheer physical conditioning."
+}

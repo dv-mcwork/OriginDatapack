@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "origin_pack:glacial_spawn",
+    "origin_pack:glacial_warmth_damage",
+    "origin_pack:glacial_heat_damage",
+    "origin_pack:glacial_chilling_touch",
+    "origin_pack:glacial_fall_damage",
+    "origin_pack:glacial_frost_walker",
+    "origin_pack:glacial_freeze",
+    "origin_pack:glacial_freeze_root",
+    "origin_pack:glacial_charge",
+    "origin_pack:glacial_charge_decay",
+    "origin_pack:glacial_freeze_cooldown"
+  ],
+  "icon": {
+    "item": "minecraft:blue_ice"
+  },
+  "order": 30,
+  "impact": 2,
+  "name": "Glacial",
+  "description": "Born of endless winter, the Glacial are creatures of frost and ice. They thrive in the cold but wither in warmth, freeze the ground beneath their feet across a wide radius, and chill anything they strike unless standing on ice or snow."
+}

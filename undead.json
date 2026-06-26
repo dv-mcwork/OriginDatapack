@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "origin_pack:undead_mob_peace",
+    "origin_pack:undead_golem_hostility",
+    "origin_pack:undead_sunlight",
+    "origin_pack:undead_weakness",
+    "origin_pack:undead_no_drown",
+    "origin_pack:undead_wither_touch",
+    "origin_pack:undead_flesh_edible",
+    "origin_pack:undead_flesh_heal"
+  ],
+  "icon": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "order": 50,
+  "impact": 3,
+  "name": "Undead",
+  "description": "Neither living nor truly dead, the Undead walk among monsters as one of their own. Hostile mobs leave you be, but Iron Golems sense the wrongness in you, the sun burns your flesh, and you carry the weakness and hunger of the grave."
+}

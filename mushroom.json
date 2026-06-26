@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "origin_pack:mushroom_spawn",
+    "origin_pack:mycelium_strength",
+    "origin_pack:myceliumify",
+    "origin_pack:myceliumify_root",
+    "origin_pack:spore_charge",
+    "origin_pack:spore_charge_decay",
+    "origin_pack:myceliumify_cooldown",
+    "origin_pack:carrion_diet_prevent",
+    "origin_pack:carrion_diet_edible",
+    "origin_pack:mushroom_fire_vulnerability",
+    "origin_pack:mushroom_night_vision",
+    "origin_pack:mushroom_off_mycelium_blindness"
+  ],
+  "icon": {
+    "item": "minecraft:red_mushroom"
+  },
+  "order": 10,
+  "impact": 3,
+  "name": "Mushroom",
+  "description": "Born from the spore networks beneath the forest floor, Mushroom-kin emerge into the world on the mushroom islands that birthed them, draw strength from the mycelium they walk upon, and can spread their fungal network across any earth. Their eyes pierce the darkness of night but fail them away from mycelium, and their dry flesh catches fire easily."
+}

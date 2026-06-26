@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "origin_pack:equestrian",
+    "origin_pack:shepherds_gift",
+    "origin_pack:urban_claustrophobia",
+    "origin_pack:wild_diet"
+  ],
+  "icon": {
+    "item": "minecraft:lead"
+  },
+  "order": 20,
+  "impact": 2,
+  "name": "The Herder",
+  "description": "A traveler bonded to the land and its creatures. The Herder rides faster and farther, lives in harmony with livestock, but finds the crowded press of villages suffocating and is sustained only by what's caught fresh and unspoiled."
+}
