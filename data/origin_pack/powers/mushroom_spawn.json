@@ -1,7 +1,7 @@
 {
   "type": "origins:modify_player_spawn",
   "name": "Spore-Born",
-  "description": "You were born of the mycelium, and the mycelium calls you home. You spawn on a Mushroom Fields island.",
+  "description": "You spawn in mushroom field biomes.",
   "dimension": "minecraft:overworld",
   "biome": "minecraft:mushroom_fields",
   "spawn_strategy": "center",
