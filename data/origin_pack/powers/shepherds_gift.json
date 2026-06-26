@@ -25,19 +25,10 @@
     ]
   },
   "bientity_action": {
-    "type": "origins:target_action",
+    "type": "origins:actor_action",
     "action": {
-      "type": "origins:spawn_entity",
-      "entity_type": "minecraft:item",
-      "entity_action": {
-        "type": "origins:and",
-        "actions": [
-          {
-            "type": "origins:execute_command",
-            "command": "data merge entity @s {Item:{id:\"minecraft:white_wool\",Count:1b}}"
-          }
-        ]
-      }
+      "type": "origins:execute_command",
+      "command": "give @s minecraft:white_wool 1"
     }
   },
   "cooldown": 100
