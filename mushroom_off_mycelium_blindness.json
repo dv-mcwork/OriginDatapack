@@ -14,11 +14,15 @@
     "show_icon": true
   },
   "condition": {
-    "type": "origins:on_block",
+    "type": "origins:block_in_radius",
     "block_condition": {
       "type": "origins:block",
       "block": "minecraft:mycelium"
     },
-    "inverted": true
+    "radius": 3,
+    "shape": "cube",
+    "comparison": "==",
+    "compare_to": 0,
+    "inverted": false
   }
 }
